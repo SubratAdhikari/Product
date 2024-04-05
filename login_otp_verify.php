@@ -115,9 +115,9 @@ function sendmail($email, $v_code)
 
         //Content
         $mail->isHTML(true);                                  //Set email format to HTML
-        $mail->Subject = 'Email Varification from Subrat';
+        $mail->Subject = 'Email Verification from SubSport';
         $mail->Body    = "Thanks for resistation! Click the link below to verify the email 
-        <a href='http://localhost/test/verify.php?email=$email&v_code=$v_code'>Verify</a>";
+        <a href='http://localhost/product/verify.php?email=$email&v_code=$v_code'>Verify</a>";
 
         $mail->send();
         return true;

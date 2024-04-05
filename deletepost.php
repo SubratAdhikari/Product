@@ -28,7 +28,7 @@ if (isset($_POST['post_id'])) {
                 // Failed to delete the file
                 echo "<script>alert('Failed to delete post media file');</script>";
                 // Redirect back to the manage posts page
-                header("Location: dashboard.php");
+                header("Location: managepost.php");
                 exit();
             }
         }
@@ -53,13 +53,13 @@ if (isset($_POST['post_id'])) {
         // Both comments and post deleted successfully
         echo "<script>alert('Post and associated comments deleted successfully');</script>";
         // Redirect back to the manage posts page
-        header("Location: dashboard.php");
+        header("Location: managepost.php");
         exit();
     } else {
         // Failed to delete post or comments
         echo "<script>alert('Failed to delete post or associated comments');</script>";
         // Redirect back to the manage posts page
-        header("Location: dashboard.php");
+        header("Location: managepost.php");
         exit();
     }
 } else {
